@@ -1,0 +1,2979 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SingleValuePerNestSorting />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+    <ZoneVisibilityControl />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='IPL2025Batters' inline='true' name='federated.09xfgvh05pprny1dnqr8214v9zg8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='IPL2025Batters' name='textscan.0clplib0bq899c13ghdqs0txkbuo'>
+            <connection class='textscan' directory='C:/Users/Pablo PC/Desktop/Tablue/archive' filename='IPL2025Batters.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0clplib0bq899c13ghdqs0txkbuo' name='IPL2025Batters.csv' table='[IPL2025Batters#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Player Name' ordinal='0' />
+            <column datatype='string' name='Team' ordinal='1' />
+            <column datatype='integer' name='Runs' ordinal='2' />
+            <column datatype='integer' name='Matches' ordinal='3' />
+            <column datatype='integer' name='Inn' ordinal='4' />
+            <column datatype='integer' name='No' ordinal='5' />
+            <column datatype='string' name='HS' ordinal='6' />
+            <column datatype='string' name='AVG' ordinal='7' />
+            <column datatype='integer' name='BF' ordinal='8' />
+            <column datatype='real' name='SR' ordinal='9' />
+            <column datatype='integer' name='100s' ordinal='10' />
+            <column datatype='integer' name='50s' ordinal='11' />
+            <column datatype='integer' name='4s' ordinal='12' />
+            <column datatype='integer' name='6s' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Player Name]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>Player Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Runs]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>Runs</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Matches</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Matches]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>Matches</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inn</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Inn]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>Inn</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>No</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HS]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>HS</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AVG</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AVG]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>AVG</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BF]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>BF</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SR]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>SR</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>100s</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[100s]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>100s</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>50s</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[50s]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>50s</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>4s</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[4s]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>4s</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6s</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[6s]</local-name>
+            <parent-name>[IPL2025Batters.csv]</parent-name>
+            <remote-alias>6s</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='100S' datatype='integer' name='[100s]' role='measure' type='quantitative' />
+      <column caption='4S' datatype='integer' name='[4s]' role='measure' type='quantitative' />
+      <column caption='50S' datatype='integer' name='[50s]' role='measure' type='quantitative' />
+      <column caption='6S' datatype='integer' name='[6s]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+      <column caption='IPL2025Batters.csv' datatype='table' name='[__tableau_internal_object_id__].[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]' role='measure' type='quantitative' />
+      <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[100s]' derivation='Sum' name='[sum:100s:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[50s]' derivation='Sum' name='[sum:50s:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/PABLOP~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1wb57rg16205621efdn9x0xd0p2e.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/05/2026 12:15:42 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Player Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Player Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Player Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>156</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Team</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Team]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Team</remote-alias>
+              <ordinal>1</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Runs</remote-alias>
+              <ordinal>2</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Matches</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Matches]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Matches</remote-alias>
+              <ordinal>3</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Inn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Inn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Inn</remote-alias>
+              <ordinal>4</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No</remote-alias>
+              <ordinal>5</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HS</remote-alias>
+              <ordinal>6</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>105</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AVG</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AVG]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AVG</remote-alias>
+              <ordinal>7</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>118</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BF</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BF</remote-alias>
+              <ordinal>8</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR</remote-alias>
+              <ordinal>9</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>134</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>100s</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[100s]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>100s</remote-alias>
+              <ordinal>10</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>50s</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[50s]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>50s</remote-alias>
+              <ordinal>11</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>4s</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[4s]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>4s</remote-alias>
+              <ordinal>12</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>6s</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[6s]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>6s</remote-alias>
+              <ordinal>13</ordinal>
+              <family>IPL2025Batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Player Name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Andre Russell&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dhruv Jurel&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jos Buttler&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Marcus Stoinis&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Phil Salt&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rohit Sharma&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Shreyas Iyer&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Virat Kohli&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Abdul Samad&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bhuvneshwar Kumar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Heinrich Klaasen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kwena Maphaka&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;N Tilak Varma&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rashid Khan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Shahbaz Ahmed&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tushar Deshpande&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Aiden Markram&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Deepak Hooda&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jamie Overton&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Maheesh Theekshana&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nitish Kumar Reddy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rinku Singh&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Shashank Singh&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Varun Chakaravarthy&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Arshdeep Singh&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Faf Du Plessis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kamindu Mendis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mitchell Santner&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Quinton De Kock&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ryan Rickelton&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Spencer Johnson&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Will Jacks&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Angkrish Raghuvanshi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Digvesh Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Josh Inglis&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Matthew Breetzke&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Prabhsimran Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Romario Shepherd&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Shubham Dubey&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Wanindu Hasaranga&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ajinkya Rahane&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Devdutt Padikkal&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jitesh Sharma&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Manish Pandey&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nitish Rana&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rishabh Pant&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sherfane Rutherford&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Venkatesh Iyer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ayush Mhatre&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Harshal Patel&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kumar Kartikeya Singh&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mohit Sharma&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rajat Patidar&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sanju Samson&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Trent Boult&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Abhinav Manohar&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Corbin Bosch&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ishan Kishan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Liam Livingstone&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Naman Dhir&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ravi Bishnoi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Shahrukh Khan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Urvil Patel&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Axar Patel&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hardik Pandya&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Krunal Pandya&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mohammed Siraj&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rahul Tripathi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sameer Rizvi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tim David&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Akash Deep&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Devon Conway&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jofra Archer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Manoj Bhandage&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Noor Ahmad&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Riyan Parag&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Shimron Hetmyer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vijay Shankar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ashutosh Sharma&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fazalhaq Farooqi&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Karn Sharma&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mitchell Starc&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rachin Ravindra&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sai Kishore&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sunil Narine&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Xavier Bartlett&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Atharva Taide&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Gerald Coetzee&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Karun Nair&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Moeen Ali&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Rahmanullah Gurbaz&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sai Sudharsan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Surya Kumar Yadav&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Yash Dayal&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ayush Badoni&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Harpreet Brar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kuldeep Yadav&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mohd Arshad Khan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Raj Angad Bawa&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Sandeep Sharma&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Travis Head&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Azmatullah Omarzai&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Harshit Rana&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kusal Mendis&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;MS Dhoni&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ramandeep Singh&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sediqullah Atal&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tristan Stubbs&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Aniket Verma&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Donovan Ferreira&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;K L Rahul&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mayank Agarwal&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Prince Yadav&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rovman Powell&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shubman Gill&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Washington Sundar&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Akash Madhwal&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dewald Brevis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jonny Bairstow&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Marco Jansen&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Pat Cummins&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Robin Minz&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Shivam Dube&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Vipraj Nigam&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Abhishek Sharma&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;David Miller&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jacob Bethell&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lockie Ferguson&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nehal Wadhera&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ravichandran Ashwin&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Shaik Rasheed&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;V Satyanarayana Penmetsa&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Avesh Khan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Glenn Maxwell&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Khaleel Ahmed&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mohammad Shami&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Rahul Tewatia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sam Curran&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Suryansh Shedge&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Yashasvi Jaiswal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Anshul Kamboj&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Dushmantha Chameera&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kagiso Rabada&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mitchell Marsh&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Priyansh Arya&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ruturaj Gaikwad&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Simarjeet Singh&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wiaan Mulder&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Abishek Porel&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Deepak Chahar&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jake Fraser - McGurk&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Madhav Tiwari&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Nicholas Pooran&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ravindra Jadeja&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Shardul Thakur&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Vaibhav Suryavanshi&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:100s:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:50s:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='IPL2025Batters.csv' id='IPL2025Batters.csv_1B7B878E8F0247FFA12A2770AA5DDEAB'>
+            <properties context=''>
+              <relation connection='textscan.0clplib0bq899c13ghdqs0txkbuo' name='IPL2025Batters.csv' table='[IPL2025Batters#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Player Name' ordinal='0' />
+                  <column datatype='string' name='Team' ordinal='1' />
+                  <column datatype='integer' name='Runs' ordinal='2' />
+                  <column datatype='integer' name='Matches' ordinal='3' />
+                  <column datatype='integer' name='Inn' ordinal='4' />
+                  <column datatype='integer' name='No' ordinal='5' />
+                  <column datatype='string' name='HS' ordinal='6' />
+                  <column datatype='string' name='AVG' ordinal='7' />
+                  <column datatype='integer' name='BF' ordinal='8' />
+                  <column datatype='real' name='SR' ordinal='9' />
+                  <column datatype='integer' name='100s' ordinal='10' />
+                  <column datatype='integer' name='50s' ordinal='11' />
+                  <column datatype='integer' name='4s' ordinal='12' />
+                  <column datatype='integer' name='6s' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+      <datasources>
+        <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+        <column datatype='integer' name='[BF]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+        <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='SUM([BF])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[none:Player Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+        <target field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_61D7A7075BA74AE2BBDC8A478EA2862B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='HS of  Players' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Player Name' />
+        <param name='target' value='HS of  Players' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2_CDFB8D933C8647C088BB093E03F6E1D0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Balls faced of the  Players' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Player Name' />
+        <param name='target' value='Balls faced of the  Players' />
+      </command>
+    </action>
+    <action caption='Highlight 3 (generated)' name='[Action3_55442A0609F146019EE86AC6BEF5B874]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Player Name' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Balls faced of the  Players'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+            <column datatype='integer' name='[BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[BF]' derivation='Sum' name='[sum:BF:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:BF:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+              <size column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+              <text column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:BF:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</rows>
+        <cols>[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:BF:qk]</cols>
+      </table>
+      <simple-id uuid='{66862965-C78A-4DC2-9E31-4A637AD883B3}' />
+    </worksheet>
+    <worksheet name='Century By Player'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+            <column caption='100S' datatype='integer' name='[100s]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[100s]' derivation='Sum' name='[sum:100s:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' value='14' />
+            <format attr='font-weight' field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' value='bold' />
+            <format attr='text-align' field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' value='left' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+              <text column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:100s:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D715E63D-9F48-4B96-A247-42A2ED7C10E3}' />
+    </worksheet>
+    <worksheet name='HS of  Players'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+            <column datatype='integer' name='[BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[SR]' role='measure' type='quantitative' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SR]' derivation='Sum' name='[sum:SR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:SR:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+              <text column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:SR:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{673EEE78-2545-4A83-A85B-F405E39CF1B3}' />
+    </worksheet>
+    <worksheet name='Most Numbers of 4s'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+            <column caption='4S' datatype='integer' name='[4s]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[4s]' derivation='Sum' name='[sum:4s:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Sai Sudharsan&quot;</bucket>
+              <bucket>&quot;Surya Kumar Yadav&quot;</bucket>
+              <bucket>&quot;Virat Kohli&quot;</bucket>
+              <bucket>&quot;Shubman Gill&quot;</bucket>
+              <bucket>&quot;Yashasvi Jaiswal&quot;</bucket>
+              <bucket>&quot;Prabhsimran Singh&quot;</bucket>
+              <bucket>&quot;Mitchell Marsh&quot;</bucket>
+              <bucket>&quot;Priyansh Arya&quot;</bucket>
+              <bucket>&quot;K L Rahul&quot;</bucket>
+              <bucket>&quot;Jos Buttler&quot;</bucket>
+              <bucket>&quot;Travis Head&quot;</bucket>
+              <bucket>&quot;Phil Salt&quot;</bucket>
+              <bucket>&quot;Ryan Rickelton&quot;</bucket>
+              <bucket>&quot;Abhishek Sharma&quot;</bucket>
+              <bucket>&quot;Nicholas Pooran&quot;</bucket>
+              <bucket>&quot;Shreyas Iyer&quot;</bucket>
+              <bucket>&quot;Heinrich Klaasen&quot;</bucket>
+              <bucket>&quot;Rohit Sharma&quot;</bucket>
+              <bucket>&quot;Aiden Markram&quot;</bucket>
+              <bucket>&quot;Ajinkya Rahane&quot;</bucket>
+              <bucket>&quot;Ishan Kishan&quot;</bucket>
+              <bucket>&quot;Ayush Mhatre&quot;</bucket>
+              <bucket>&quot;Angkrish Raghuvanshi&quot;</bucket>
+              <bucket>&quot;Nehal Wadhera&quot;</bucket>
+              <bucket>&quot;Abishek Porel&quot;</bucket>
+              <bucket>&quot;Sanju Samson&quot;</bucket>
+              <bucket>&quot;Riyan Parag&quot;</bucket>
+              <bucket>&quot;Nitish Rana&quot;</bucket>
+              <bucket>&quot;Ayush Badoni&quot;</bucket>
+              <bucket>&quot;Josh Inglis&quot;</bucket>
+              <bucket>&quot;Tristan Stubbs&quot;</bucket>
+              <bucket>&quot;Sunil Narine&quot;</bucket>
+              <bucket>&quot;Ravindra Jadeja&quot;</bucket>
+              <bucket>&quot;Rajat Patidar&quot;</bucket>
+              <bucket>&quot;Naman Dhir&quot;</bucket>
+              <bucket>&quot;Karun Nair&quot;</bucket>
+              <bucket>&quot;Jitesh Sharma&quot;</bucket>
+              <bucket>&quot;Shashank Singh&quot;</bucket>
+              <bucket>&quot;Rishabh Pant&quot;</bucket>
+              <bucket>&quot;N Tilak Varma&quot;</bucket>
+              <bucket>&quot;Axar Patel&quot;</bucket>
+              <bucket>&quot;Will Jacks&quot;</bucket>
+              <bucket>&quot;Shivam Dube&quot;</bucket>
+              <bucket>&quot;Sherfane Rutherford&quot;</bucket>
+              <bucket>&quot;Dhruv Jurel&quot;</bucket>
+              <bucket>&quot;Devdutt Padikkal&quot;</bucket>
+              <bucket>&quot;Rinku Singh&quot;</bucket>
+              <bucket>&quot;Vaibhav Suryavanshi&quot;</bucket>
+              <bucket>&quot;Rachin Ravindra&quot;</bucket>
+              <bucket>&quot;Hardik Pandya&quot;</bucket>
+              <bucket>&quot;Faf Du Plessis&quot;</bucket>
+              <bucket>&quot;Shimron Hetmyer&quot;</bucket>
+              <bucket>&quot;Devon Conway&quot;</bucket>
+              <bucket>&quot;Tim David&quot;</bucket>
+              <bucket>&quot;Nitish Kumar Reddy&quot;</bucket>
+              <bucket>&quot;Andre Russell&quot;</bucket>
+              <bucket>&quot;Vipraj Nigam&quot;</bucket>
+              <bucket>&quot;Venkatesh Iyer&quot;</bucket>
+              <bucket>&quot;Ruturaj Gaikwad&quot;</bucket>
+              <bucket>&quot;Ashutosh Sharma&quot;</bucket>
+              <bucket>&quot;Dewald Brevis&quot;</bucket>
+              <bucket>&quot;David Miller&quot;</bucket>
+              <bucket>&quot;MS Dhoni&quot;</bucket>
+              <bucket>&quot;Aniket Verma&quot;</bucket>
+              <bucket>&quot;Shahrukh Khan&quot;</bucket>
+              <bucket>&quot;Sameer Rizvi&quot;</bucket>
+              <bucket>&quot;Sam Curran&quot;</bucket>
+              <bucket>&quot;Washington Sundar&quot;</bucket>
+              <bucket>&quot;Rahmanullah Gurbaz&quot;</bucket>
+              <bucket>&quot;Mayank Agarwal&quot;</bucket>
+              <bucket>&quot;Shaik Rasheed&quot;</bucket>
+              <bucket>&quot;Quinton De Kock&quot;</bucket>
+              <bucket>&quot;Krunal Pandya&quot;</bucket>
+              <bucket>&quot;Jacob Bethell&quot;</bucket>
+              <bucket>&quot;Vijay Shankar&quot;</bucket>
+              <bucket>&quot;Marcus Stoinis&quot;</bucket>
+              <bucket>&quot;Abdul Samad&quot;</bucket>
+              <bucket>&quot;Kamindu Mendis&quot;</bucket>
+              <bucket>&quot;Jonny Bairstow&quot;</bucket>
+              <bucket>&quot;Jake Fraser - McGurk&quot;</bucket>
+              <bucket>&quot;Shubham Dubey&quot;</bucket>
+              <bucket>&quot;Rahul Tripathi&quot;</bucket>
+              <bucket>&quot;Rahul Tewatia&quot;</bucket>
+              <bucket>&quot;Pat Cummins&quot;</bucket>
+              <bucket>&quot;Azmatullah Omarzai&quot;</bucket>
+              <bucket>&quot;Urvil Patel&quot;</bucket>
+              <bucket>&quot;Romario Shepherd&quot;</bucket>
+              <bucket>&quot;Manish Pandey&quot;</bucket>
+              <bucket>&quot;Harshit Rana&quot;</bucket>
+              <bucket>&quot;Glenn Maxwell&quot;</bucket>
+              <bucket>&quot;Liam Livingstone&quot;</bucket>
+              <bucket>&quot;Shardul Thakur&quot;</bucket>
+              <bucket>&quot;Ravichandran Ashwin&quot;</bucket>
+              <bucket>&quot;Marco Jansen&quot;</bucket>
+              <bucket>&quot;Jofra Archer&quot;</bucket>
+              <bucket>&quot;Deepak Chahar&quot;</bucket>
+              <bucket>&quot;Corbin Bosch&quot;</bucket>
+              <bucket>&quot;Avesh Khan&quot;</bucket>
+              <bucket>&quot;Atharva Taide&quot;</bucket>
+              <bucket>&quot;Rashid Khan&quot;</bucket>
+              <bucket>&quot;Mitchell Santner&quot;</bucket>
+              <bucket>&quot;Kwena Maphaka&quot;</bucket>
+              <bucket>&quot;Kuldeep Yadav&quot;</bucket>
+              <bucket>&quot;Gerald Coetzee&quot;</bucket>
+              <bucket>&quot;Deepak Hooda&quot;</bucket>
+              <bucket>&quot;Anshul Kamboj&quot;</bucket>
+              <bucket>&quot;Abhinav Manohar&quot;</bucket>
+              <bucket>&quot;Xavier Bartlett&quot;</bucket>
+              <bucket>&quot;Wiaan Mulder&quot;</bucket>
+              <bucket>&quot;Shahbaz Ahmed&quot;</bucket>
+              <bucket>&quot;Rovman Powell&quot;</bucket>
+              <bucket>&quot;Ramandeep Singh&quot;</bucket>
+              <bucket>&quot;Mohammad Shami&quot;</bucket>
+              <bucket>&quot;Matthew Breetzke&quot;</bucket>
+              <bucket>&quot;Lockie Ferguson&quot;</bucket>
+              <bucket>&quot;Kusal Mendis&quot;</bucket>
+              <bucket>&quot;Jamie Overton&quot;</bucket>
+              <bucket>&quot;Bhuvneshwar Kumar&quot;</bucket>
+              <bucket>&quot;Yash Dayal&quot;</bucket>
+              <bucket>&quot;Wanindu Hasaranga&quot;</bucket>
+              <bucket>&quot;Varun Chakaravarthy&quot;</bucket>
+              <bucket>&quot;V Satyanarayana Penmetsa&quot;</bucket>
+              <bucket>&quot;Tushar Deshpande&quot;</bucket>
+              <bucket>&quot;Trent Boult&quot;</bucket>
+              <bucket>&quot;Suryansh Shedge&quot;</bucket>
+              <bucket>&quot;Spencer Johnson&quot;</bucket>
+              <bucket>&quot;Simarjeet Singh&quot;</bucket>
+              <bucket>&quot;Sediqullah Atal&quot;</bucket>
+              <bucket>&quot;Sandeep Sharma&quot;</bucket>
+              <bucket>&quot;Sai Kishore&quot;</bucket>
+              <bucket>&quot;Robin Minz&quot;</bucket>
+              <bucket>&quot;Ravi Bishnoi&quot;</bucket>
+              <bucket>&quot;Raj Angad Bawa&quot;</bucket>
+              <bucket>&quot;Prince Yadav&quot;</bucket>
+              <bucket>&quot;Noor Ahmad&quot;</bucket>
+              <bucket>&quot;Mohit Sharma&quot;</bucket>
+              <bucket>&quot;Mohd Arshad Khan&quot;</bucket>
+              <bucket>&quot;Mohammed Siraj&quot;</bucket>
+              <bucket>&quot;Moeen Ali&quot;</bucket>
+              <bucket>&quot;Mitchell Starc&quot;</bucket>
+              <bucket>&quot;Manoj Bhandage&quot;</bucket>
+              <bucket>&quot;Maheesh Theekshana&quot;</bucket>
+              <bucket>&quot;Madhav Tiwari&quot;</bucket>
+              <bucket>&quot;Kumar Kartikeya Singh&quot;</bucket>
+              <bucket>&quot;Khaleel Ahmed&quot;</bucket>
+              <bucket>&quot;Karn Sharma&quot;</bucket>
+              <bucket>&quot;Kagiso Rabada&quot;</bucket>
+              <bucket>&quot;Harshal Patel&quot;</bucket>
+              <bucket>&quot;Harpreet Brar&quot;</bucket>
+              <bucket>&quot;Fazalhaq Farooqi&quot;</bucket>
+              <bucket>&quot;Dushmantha Chameera&quot;</bucket>
+              <bucket>&quot;Donovan Ferreira&quot;</bucket>
+              <bucket>&quot;Digvesh Singh&quot;</bucket>
+              <bucket>&quot;Arshdeep Singh&quot;</bucket>
+              <bucket>&quot;Akash Madhwal&quot;</bucket>
+              <bucket>&quot;Akash Deep&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+              <size column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:4s:qk]' />
+              <text column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:4s:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{FDD88E57-F3F9-4288-9FA5-2E4A3363C449}' />
+    </worksheet>
+    <worksheet name='Most Numbers of 50s'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+            <column caption='50S' datatype='integer' name='[50s]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[50s]' derivation='Sum' name='[sum:50s:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:50s:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+              <text column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:50s:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</rows>
+        <cols>[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:50s:qk]</cols>
+      </table>
+      <simple-id uuid='{1AC686B2-2BAB-4A14-B337-70B8EB4F48FF}' />
+    </worksheet>
+    <worksheet name='Most Numbers of 6s'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+            <column caption='6S' datatype='integer' name='[6s]' role='measure' type='quantitative' />
+            <column datatype='string' name='[AVG]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column-instance column='[AVG]' derivation='None' name='[none:AVG:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[6s]' derivation='Sum' name='[sum:6s:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:6s:qk]</rows>
+        <cols>([federated.09xfgvh05pprny1dnqr8214v9zg8].[none:AVG:nk] / [federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk])</cols>
+      </table>
+      <simple-id uuid='{C01BC3AA-7908-4B1F-8DFE-6A834D0878DA}' />
+    </worksheet>
+    <worksheet name='Most Run in IPL 2025'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+            <column datatype='integer' name='[BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Runs]' role='measure' type='quantitative' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Runs]' derivation='Sum' name='[sum:Runs:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Sai Sudharsan&quot;</bucket>
+              <bucket>&quot;Surya Kumar Yadav&quot;</bucket>
+              <bucket>&quot;Virat Kohli&quot;</bucket>
+              <bucket>&quot;Shubman Gill&quot;</bucket>
+              <bucket>&quot;Mitchell Marsh&quot;</bucket>
+              <bucket>&quot;Shreyas Iyer&quot;</bucket>
+              <bucket>&quot;Yashasvi Jaiswal&quot;</bucket>
+              <bucket>&quot;Prabhsimran Singh&quot;</bucket>
+              <bucket>&quot;K L Rahul&quot;</bucket>
+              <bucket>&quot;Jos Buttler&quot;</bucket>
+              <bucket>&quot;Nicholas Pooran&quot;</bucket>
+              <bucket>&quot;Heinrich Klaasen&quot;</bucket>
+              <bucket>&quot;Priyansh Arya&quot;</bucket>
+              <bucket>&quot;Aiden Markram&quot;</bucket>
+              <bucket>&quot;Abhishek Sharma&quot;</bucket>
+              <bucket>&quot;Rohit Sharma&quot;</bucket>
+              <bucket>&quot;Phil Salt&quot;</bucket>
+              <bucket>&quot;Riyan Parag&quot;</bucket>
+              <bucket>&quot;Ajinkya Rahane&quot;</bucket>
+              <bucket>&quot;Ryan Rickelton&quot;</bucket>
+              <bucket>&quot;Travis Head&quot;</bucket>
+              <bucket>&quot;Nehal Wadhera&quot;</bucket>
+              <bucket>&quot;Shivam Dube&quot;</bucket>
+              <bucket>&quot;Ishan Kishan&quot;</bucket>
+              <bucket>&quot;Shashank Singh&quot;</bucket>
+              <bucket>&quot;N Tilak Varma&quot;</bucket>
+              <bucket>&quot;Dhruv Jurel&quot;</bucket>
+              <bucket>&quot;Ayush Badoni&quot;</bucket>
+              <bucket>&quot;Rajat Patidar&quot;</bucket>
+              <bucket>&quot;Abishek Porel&quot;</bucket>
+              <bucket>&quot;Ravindra Jadeja&quot;</bucket>
+              <bucket>&quot;Angkrish Raghuvanshi&quot;</bucket>
+              <bucket>&quot;Tristan Stubbs&quot;</bucket>
+              <bucket>&quot;Sherfane Rutherford&quot;</bucket>
+              <bucket>&quot;Sanju Samson&quot;</bucket>
+              <bucket>&quot;Josh Inglis&quot;</bucket>
+              <bucket>&quot;Rishabh Pant&quot;</bucket>
+              <bucket>&quot;Axar Patel&quot;</bucket>
+              <bucket>&quot;Jitesh Sharma&quot;</bucket>
+              <bucket>&quot;Naman Dhir&quot;</bucket>
+              <bucket>&quot;Vaibhav Suryavanshi&quot;</bucket>
+              <bucket>&quot;Devdutt Padikkal&quot;</bucket>
+              <bucket>&quot;Sunil Narine&quot;</bucket>
+              <bucket>&quot;Ayush Mhatre&quot;</bucket>
+              <bucket>&quot;Shimron Hetmyer&quot;</bucket>
+              <bucket>&quot;Aniket Verma&quot;</bucket>
+              <bucket>&quot;Will Jacks&quot;</bucket>
+              <bucket>&quot;Dewald Brevis&quot;</bucket>
+              <bucket>&quot;Hardik Pandya&quot;</bucket>
+              <bucket>&quot;Nitish Rana&quot;</bucket>
+              <bucket>&quot;Rinku Singh&quot;</bucket>
+              <bucket>&quot;Ashutosh Sharma&quot;</bucket>
+              <bucket>&quot;Faf Du Plessis&quot;</bucket>
+              <bucket>&quot;Karun Nair&quot;</bucket>
+              <bucket>&quot;MS Dhoni&quot;</bucket>
+              <bucket>&quot;Rachin Ravindra&quot;</bucket>
+              <bucket>&quot;Tim David&quot;</bucket>
+              <bucket>&quot;Nitish Kumar Reddy&quot;</bucket>
+              <bucket>&quot;Shahrukh Khan&quot;</bucket>
+              <bucket>&quot;Andre Russell&quot;</bucket>
+              <bucket>&quot;Abdul Samad&quot;</bucket>
+              <bucket>&quot;Marcus Stoinis&quot;</bucket>
+              <bucket>&quot;Devon Conway&quot;</bucket>
+              <bucket>&quot;David Miller&quot;</bucket>
+              <bucket>&quot;Quinton De Kock&quot;</bucket>
+              <bucket>&quot;Venkatesh Iyer&quot;</bucket>
+              <bucket>&quot;Vipraj Nigam&quot;</bucket>
+              <bucket>&quot;Washington Sundar&quot;</bucket>
+              <bucket>&quot;Ruturaj Gaikwad&quot;</bucket>
+              <bucket>&quot;Sameer Rizvi&quot;</bucket>
+              <bucket>&quot;Vijay Shankar&quot;</bucket>
+              <bucket>&quot;Sam Curran&quot;</bucket>
+              <bucket>&quot;Liam Livingstone&quot;</bucket>
+              <bucket>&quot;Krunal Pandya&quot;</bucket>
+              <bucket>&quot;Shubham Dubey&quot;</bucket>
+              <bucket>&quot;Rahul Tewatia&quot;</bucket>
+              <bucket>&quot;Pat Cummins&quot;</bucket>
+              <bucket>&quot;Mayank Agarwal&quot;</bucket>
+              <bucket>&quot;Kamindu Mendis&quot;</bucket>
+              <bucket>&quot;Manish Pandey&quot;</bucket>
+              <bucket>&quot;Jonny Bairstow&quot;</bucket>
+              <bucket>&quot;Marco Jansen&quot;</bucket>
+              <bucket>&quot;Rahmanullah Gurbaz&quot;</bucket>
+              <bucket>&quot;Shaik Rasheed&quot;</bucket>
+              <bucket>&quot;Romario Shepherd&quot;</bucket>
+              <bucket>&quot;Urvil Patel&quot;</bucket>
+              <bucket>&quot;Jacob Bethell&quot;</bucket>
+              <bucket>&quot;Jofra Archer&quot;</bucket>
+              <bucket>&quot;Abhinav Manohar&quot;</bucket>
+              <bucket>&quot;Azmatullah Omarzai&quot;</bucket>
+              <bucket>&quot;Harshit Rana&quot;</bucket>
+              <bucket>&quot;Jake Fraser - McGurk&quot;</bucket>
+              <bucket>&quot;Rahul Tripathi&quot;</bucket>
+              <bucket>&quot;Glenn Maxwell&quot;</bucket>
+              <bucket>&quot;Corbin Bosch&quot;</bucket>
+              <bucket>&quot;Ramandeep Singh&quot;</bucket>
+              <bucket>&quot;Mitchell Santner&quot;</bucket>
+              <bucket>&quot;Rashid Khan&quot;</bucket>
+              <bucket>&quot;Deepak Chahar&quot;</bucket>
+              <bucket>&quot;Ravichandran Ashwin&quot;</bucket>
+              <bucket>&quot;Deepak Hooda&quot;</bucket>
+              <bucket>&quot;Mohd Arshad Khan&quot;</bucket>
+              <bucket>&quot;Sediqullah Atal&quot;</bucket>
+              <bucket>&quot;Avesh Khan&quot;</bucket>
+              <bucket>&quot;Harshal Patel&quot;</bucket>
+              <bucket>&quot;Kusal Mendis&quot;</bucket>
+              <bucket>&quot;Kuldeep Yadav&quot;</bucket>
+              <bucket>&quot;Shardul Thakur&quot;</bucket>
+              <bucket>&quot;Gerald Coetzee&quot;</bucket>
+              <bucket>&quot;Jamie Overton&quot;</bucket>
+              <bucket>&quot;Anshul Kamboj&quot;</bucket>
+              <bucket>&quot;Bhuvneshwar Kumar&quot;</bucket>
+              <bucket>&quot;Matthew Breetzke&quot;</bucket>
+              <bucket>&quot;Atharva Taide&quot;</bucket>
+              <bucket>&quot;Ravi Bishnoi&quot;</bucket>
+              <bucket>&quot;Harpreet Brar&quot;</bucket>
+              <bucket>&quot;Xavier Bartlett&quot;</bucket>
+              <bucket>&quot;Dushmantha Chameera&quot;</bucket>
+              <bucket>&quot;Maheesh Theekshana&quot;</bucket>
+              <bucket>&quot;Mohammad Shami&quot;</bucket>
+              <bucket>&quot;Kagiso Rabada&quot;</bucket>
+              <bucket>&quot;Shahbaz Ahmed&quot;</bucket>
+              <bucket>&quot;Wanindu Hasaranga&quot;</bucket>
+              <bucket>&quot;Wiaan Mulder&quot;</bucket>
+              <bucket>&quot;Kwena Maphaka&quot;</bucket>
+              <bucket>&quot;Raj Angad Bawa&quot;</bucket>
+              <bucket>&quot;Noor Ahmad&quot;</bucket>
+              <bucket>&quot;Suryansh Shedge&quot;</bucket>
+              <bucket>&quot;Tushar Deshpande&quot;</bucket>
+              <bucket>&quot;Akash Deep&quot;</bucket>
+              <bucket>&quot;Mitchell Starc&quot;</bucket>
+              <bucket>&quot;Robin Minz&quot;</bucket>
+              <bucket>&quot;Sandeep Sharma&quot;</bucket>
+              <bucket>&quot;Moeen Ali&quot;</bucket>
+              <bucket>&quot;Prince Yadav&quot;</bucket>
+              <bucket>&quot;Rovman Powell&quot;</bucket>
+              <bucket>&quot;Sai Kishore&quot;</bucket>
+              <bucket>&quot;Akash Madhwal&quot;</bucket>
+              <bucket>&quot;Lockie Ferguson&quot;</bucket>
+              <bucket>&quot;Yash Dayal&quot;</bucket>
+              <bucket>&quot;Kumar Kartikeya Singh&quot;</bucket>
+              <bucket>&quot;Madhav Tiwari&quot;</bucket>
+              <bucket>&quot;Mohammed Siraj&quot;</bucket>
+              <bucket>&quot;Simarjeet Singh&quot;</bucket>
+              <bucket>&quot;Arshdeep Singh&quot;</bucket>
+              <bucket>&quot;Fazalhaq Farooqi&quot;</bucket>
+              <bucket>&quot;Spencer Johnson&quot;</bucket>
+              <bucket>&quot;Trent Boult&quot;</bucket>
+              <bucket>&quot;Digvesh Singh&quot;</bucket>
+              <bucket>&quot;Donovan Ferreira&quot;</bucket>
+              <bucket>&quot;Karn Sharma&quot;</bucket>
+              <bucket>&quot;Khaleel Ahmed&quot;</bucket>
+              <bucket>&quot;Manoj Bhandage&quot;</bucket>
+              <bucket>&quot;Mohit Sharma&quot;</bucket>
+              <bucket>&quot;V Satyanarayana Penmetsa&quot;</bucket>
+              <bucket>&quot;Varun Chakaravarthy&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' value='16' />
+            <format attr='font-weight' field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' value='bold' />
+            <format attr='text-align' field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' value='left' />
+            <format attr='text-orientation' field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' value='0' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+              <text column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:Runs:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='16'>&lt;</run>
+                <run fontsize='16'>[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:Runs:qk]</run>
+                <run fontsize='16'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.2413811683654785' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</rows>
+        <cols>[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:Runs:qk]</cols>
+      </table>
+      <simple-id uuid='{EADA8C2A-04A6-4161-9360-C5857D7B37E6}' />
+    </worksheet>
+    <worksheet name='Number of Match plays by Players'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+            <column datatype='integer' name='[BF]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Matches]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Matches]' derivation='Sum' name='[sum:Matches:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:Matches:qk]' />
+              <color column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+              <text column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' />
+              <text column='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:Matches:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FA6884ED-F195-47FD-B3FC-C2C77297C0A6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f17b79' fontname='Tableau Bold' fontsize='36'>IPL 2025 DASHBOARD</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f9e9e0' />
+        </style-rule>
+      </style>
+      <size maxheight='1260' maxwidth='2320' minheight='1160' minwidth='2320' sizing-mode='range' />
+      <datasources>
+        <datasource caption='IPL2025Batters' name='federated.09xfgvh05pprny1dnqr8214v9zg8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.09xfgvh05pprny1dnqr8214v9zg8'>
+        <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+        <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98686' id='11' param='horz' type-v2='layout-flow' w='99310' x='345' y='657'>
+            <zone h='98686' id='5' param='vert' type-v2='layout-flow' w='99310' x='345' y='657' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='9203' id='8' is-centered='0' is-scaled='1' param='C:/Users/Pablo PC/Desktop/Tablue/Indian biggest festival IPL 2025 soon.jpg' type-v2='bitmap' w='8578' x='603' y='986' />
+        <zone h='25555' id='13' name='Most Run in IPL 2025' w='32155' x='33319' y='12736' />
+        <zone h='16187' id='14' name='Most Run in IPL 2025' pane-specification-id='1' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type-v2='color' w='6767' x='92888' y='493' />
+        <zone h='9121' id='12' mode='dropdown' name='Balls faced of the  Players' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type-v2='filter' values='relevant' w='7241' x='84871' y='1068' />
+        <zone h='25965' id='16' name='Most Numbers of 6s' w='31466' x='34181' y='40756' />
+        <zone h='24486' id='17' name='Most Numbers of 50s' w='33319' x='991' y='72062' />
+        <zone fixed-size='125' h='5998' id='7' is-fixed='true' type-v2='title' w='22629' x='34224' y='1972' />
+        <zone h='24240' id='20' name='Balls faced of the  Players' w='31940' x='35216' y='72227' />
+        <zone h='17913' hidden-by-user='true' id='21' name='Balls faced of the  Players' pane-specification-id='0' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type-v2='size' w='6034' x='67457' y='74856' />
+        <zone h='26869' id='22' name='Century By Player' w='31422' x='819' y='12983' />
+        <zone h='28513' id='23' name='Most Numbers of 4s' w='29914' x='1164' y='40592' />
+        <zone h='1972' id='24' type-v2='dashboard-object' w='1034' x='66250' y='75678'>
+          <button action='' active-visual-state-index='1'>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{F7B241E4-4110-4DD3-B3AC-0B64FFA09407}&quot; zone-id=&quot;24&quot; zone-ids=[21]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+        <zone h='41660' id='25' name='HS of  Players' w='30129' x='68276' y='55382' />
+        <zone h='31635' id='26' name='Number of Match plays by Players' w='33319' x='66336' y='18324' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#f17b79' fontname='Tableau Bold' fontsize='36'>IPL 2025 DASHBOARD</run>
+                <run fontalignment='1'>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2700' minheight='2700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98686' id='27' param='vert' type-v2='layout-flow' w='99310' x='345' y='657'>
+                <zone fixed-size='125' h='5998' id='7' type-v2='title' w='22629' x='34224' y='1972'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='116' forceUpdate='true' h='9203' id='8' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/Pablo PC/Desktop/Tablue/Indian biggest festival IPL 2025 soon.jpg' type-v2='bitmap' w='8578' x='603' y='986'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='25555' id='13' is-fixed='true' name='Most Run in IPL 2025' w='32155' x='33319' y='12736'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16187' id='14' name='Most Run in IPL 2025' pane-specification-id='1' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type-v2='color' w='6767' x='92888' y='493'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='26869' id='22' is-fixed='true' name='Century By Player' w='31422' x='819' y='12983'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31635' id='26' is-fixed='true' name='Number of Match plays by Players' w='33319' x='66336' y='18324'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28513' id='23' is-fixed='true' name='Most Numbers of 4s' w='29914' x='1164' y='40592'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='25965' id='16' is-fixed='true' name='Most Numbers of 6s' w='31466' x='34181' y='40756'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41660' id='25' is-fixed='true' name='HS of  Players' w='30129' x='68276' y='55382'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24486' id='17' is-fixed='true' name='Most Numbers of 50s' w='33319' x='991' y='72062'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9121' id='12' mode='dropdown' name='Balls faced of the  Players' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type-v2='filter' values='relevant' w='7241' x='84871' y='1068'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24240' id='20' is-fixed='true' name='Balls faced of the  Players' w='31940' x='35216' y='72227'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17913' id='21' name='Balls faced of the  Players' pane-specification-id='0' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type-v2='size' w='6034' x='67457' y='74856'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A9C2F819-2B93-4225-A710-EEA024840214}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Century By Player'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:AVG:nk]</field>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1E49014B-7E13-4D3A-AB33-2F332C1A05D0}' />
+    </window>
+    <window class='worksheet' name='Most Run in IPL 2025'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{38EB2EB1-1779-4F3A-B577-C92F0480C927}' />
+    </window>
+    <window class='worksheet' name='Most Numbers of 4s'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[sum:4s:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0B1DDFCC-E143-406D-A760-E15DB9EC355A}' />
+    </window>
+    <window class='worksheet' name='Most Numbers of 6s'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{53BEBA32-94D2-4304-9F26-7F8AE4636898}' />
+    </window>
+    <window class='worksheet' name='Most Numbers of 50s'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{54D84A1B-B6C8-4225-80C0-31BD350031F5}' />
+    </window>
+    <window class='worksheet' name='HS of  Players'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:HS:nk]</field>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4EA5BE66-DFDB-4B6D-99E9-A7F119693F7A}' />
+    </window>
+    <window class='worksheet' name='Number of Match plays by Players'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B4E086D2-4522-46D7-A6CB-F14C78E9DFF5}' />
+    </window>
+    <window class='worksheet' name='Balls faced of the  Players'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2A6AF618-26D3-4D02-962F-11A938D5D2EC}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Balls faced of the  Players'>
+          <highlight field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]' type='size'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Century By Player'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='HS of  Players'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Most Numbers of 4s'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Most Numbers of 50s' />
+        <viewpoint name='Most Numbers of 6s'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Most Run in IPL 2025'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.09xfgvh05pprny1dnqr8214v9zg8].[none:Player Name:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Number of Match plays by Players'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{F7B241E4-4110-4DD3-B3AC-0B64FFA09407}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Balls faced of the  Players' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Century By Player' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='HS of  Players' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Most Numbers of 4s' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Most Numbers of 50s' width='192'>
+      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
+      Y4icAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Most Numbers of 6s' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Most Run in IPL 2025' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Number of Match plays by Players' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
